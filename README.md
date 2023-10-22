@@ -2,7 +2,10 @@
 
 Mayar Python Client. **Still in heavy developtment**.
 
-Untuk mulai menggunakan Mayar Headless API, Tentunya kita butuh akun account, untuk membuat akun bisa ke https://myr.id. jika sudah punya akun, API KEY bisa di dapatkan dari https://web.myr.id/api-keys. Bila menemukan bugs mohon di laporkan lewat issue yak sob.
+Untuk mulai menggunakan Mayar Headless API, Tentunya kita butuh akun account, untuk membuat akun bisa ke https://mayar.id. jika sudah punya akun, API KEY bisa di dapatkan dari https://web.mayar.id/api-keys. Untuk panduan REST API bisa di akses dari https://documenter.getpostman.com/view/25084670/2s8Z6x1sr8
+
+
+Bila menemukan bugs mohon di laporkan lewat issue yak sob.
 
 
 Fitur yang sudah didukung:
