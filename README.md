@@ -61,9 +61,9 @@ api_url = "https://api.mayar.id/hl/v1"
 from mayar import Mayar
 
 myr = Mayar(api_key, api_url)
-all_product = myr.allProduct()
+all_product = myr.all_product()
 # with pagination (page, page_size)
-page_product = myr.allProduct(page=1, page_size=10)
+page_product = myr.all_product(page=1, page_size=10)
 # tipe product. untuk detail lengkap tipe product, silahlan merujuk ke dokumentasi mayar
 tipe_product = myr.all_product(tipe="generic_link", page=1, page_size=10)
 # search product
@@ -99,7 +99,6 @@ close_invoice = myr.detail_invoice(id="00a1cd6a-0a30-4746-bd30-06d2f619041e", ac
 open_invoice = myr.detail_invoice(id="00a1cd6a-0a30-4746-bd30-06d2f619041e",  action="open")
 
 # create Invoice
-import json
 
 body = {
       "name": "andre",
@@ -163,7 +162,6 @@ open_single_payment = myr.detail_single_payment(id="00a1cd6a-0a30-4746-bd30-06d2
 close_single_payment = await myr.detail_single_payment(id="00a1cd6a-0a30-4746-bd30-06d2f619041e", action="closed")
 
 # create Single Payment / Penagihan
-import json
 
 body = {
       "name": "andre",
@@ -174,7 +172,7 @@ body = {
       "description": "cobalah dulu yak gaes"
     }
 
-create = myr.create_payment(body)
+create = myr.create_single_payment(body)
 # edit single reqeust payment / penagihan. selain id opsional, hanya provide data yg ingin diubah
 # id : id single request payment yang ingin di buat
 
@@ -188,7 +186,7 @@ body = {
       "description": "cobalah dulu yak gaes"
     }
 
-edit = myr.single_payment(body)
+edit = myr.edit_single_payment(body)
 
 ```
 
@@ -213,9 +211,9 @@ from mayar import Mayar
 # your credential
 myr = Mayar(api_key, api_url)
 # paid transaction
-allCustomer = myr.paid_transactions()
+paid = myr.paid_transactions()
 # unpaid transaction
-pageProduct = myr.unpaid_transactions(page=1, page_size=10)
+unpaid = myr.unpaid_transactions(page=1, page_size=10)
 ```
 ## Account Balance
 
