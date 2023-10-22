@@ -36,11 +36,11 @@ Fitur yang sudah didukung:
 * Balance
   * balance account     
 
-## Dependensi
+## Installasi
 
 ```py
 
-pip install universalasync, httpx
+pip install git+https://github.com/mayarid/mayar-py.git
 
 ```
 
